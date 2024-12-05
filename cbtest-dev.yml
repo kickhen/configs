@@ -3,7 +3,7 @@ resilience4j:
     configs:
       default:
         slidingWindowType: COUNT_BASED
-        slidingWindowSize: 2
+        slidingWindowSize: 4
         failureRateThreshold: 50
         permittedNumberOfCallsInHalfOpenState: 5
         registerHealthIndicator: true
