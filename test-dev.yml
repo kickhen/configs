@@ -10,6 +10,7 @@ resilience4j:
         failureRateThreshold: 50
         permittedNumberOfCallsInHalfOpenState: 5
         registerHealthIndicator: true
+        
 
     instances:
       cat-image-circuit-breaker:
