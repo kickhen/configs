@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: cbtest
+resilience4j:
+  circuitbreaker:
+    configs:
+      default:
+        slidingWindowType: COUNT_BASED
+        slidingWindowSize: 10
+        failureRateThreshold: 50
+        permittedNumberOfCallsInHalfOpenState: 5
+        registerHealthIndicator: true
+
+    instances:
+      cat-image-circuit-breaker:
+        base-config: default
