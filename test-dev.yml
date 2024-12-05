@@ -7,10 +7,10 @@ resilience4j:
       default:
         slidingWindowType: COUNT_BASED
         slidingWindowSize: 10
-        failureRateThreshold: 50
+        failureRateThreshold: 40
         permittedNumberOfCallsInHalfOpenState: 5
         registerHealthIndicator: true
-        
+
 
     instances:
       cat-image-circuit-breaker:
