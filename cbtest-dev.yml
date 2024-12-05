@@ -8,6 +8,7 @@ resilience4j:
         permittedNumberOfCallsInHalfOpenState: 5
         registerHealthIndicator: true
         waitDurationInOpenState: 5s
+        minimumNumberOfCalls: 2
     instances:
       cat-image-circuit-breaker:
         base-config: default
