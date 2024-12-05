@@ -1,6 +1,3 @@
-spring:
-  application:
-    name: cbtest
 resilience4j:
   circuitbreaker:
     configs:
@@ -10,8 +7,6 @@ resilience4j:
         failureRateThreshold: 40
         permittedNumberOfCallsInHalfOpenState: 5
         registerHealthIndicator: true
-
-
     instances:
       cat-image-circuit-breaker:
         base-config: default
