@@ -12,7 +12,7 @@ resilience4j:
     instances:
       cat-image-circuit-breaker:
         base-config: default
-        slidingWindowSize: 6
+        slidingWindowSize: 8
       dog-image-circuit-breaker:
         base-config: default
         slidingWindowSize: 4
